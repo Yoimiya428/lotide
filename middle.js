@@ -18,11 +18,11 @@ const middle = function(array) {
   } else if (array.length % 2 !== 0 && array.length > 2) {
     middleArray.push(array[Math.floor(array.length/2)]);
   } 
-  console.log(middleArray);
+  return (middleArray);
 }
 
 // TEST CODE
-middle([1, 2, 3, 4]); // => [2, 3]
-middle([1, 2, 3, 4, 5, 6]); // => [3, 4]
+assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]);
+assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
 middle([1, 2, 3]); // => [2]
 middle([1, 2, 3, 4, 5]); // => [3]
