@@ -3,12 +3,11 @@ const eqArrays = (arr1, arr2) => {
     for (i in arr1) {
       if (arr1[i] !== arr2[i]) {
         return false;
-      } else {
-        return true;
-      }
+      } 
     }
-  }
-}; 
+    return true;
+    }
+};
 
 const assertArraysEqual = function(actual, expected) {
 if (eqArrays(actual,expected)) {
