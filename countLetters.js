@@ -10,11 +10,13 @@ const countLetters = function (string) {
   let countOfLetter = {};
 
   for (const i of string) {
-    
-    countOfLetter[i] = (countOfLetter[i] || 0) + 1;
-  
+    if (i !== ' ') {
+      countOfLetter[i] = (countOfLetter[i] || 0) + 1;
+    }
   }
    return countOfLetter;
 };
 
-countLetters('LHL');
+const result = countLetters('LHL');
+assertEqual(result['L'], 2);
+assertEqual(result['H'], 1);
