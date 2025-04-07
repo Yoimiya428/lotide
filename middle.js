@@ -1,13 +1,23 @@
+const eqArrays = (arr1, arr2) => {
+  return arr1.toString() === arr2.toString();
+} 
+
+const assertArraysEqual = function(actual, expected) {
+if (eqArrays(actual,expected)) {
+  console.log(`Assertion Passed: ${actual} === ${expected}`);
+} else {
+  console.log(`Assertion Failed: ${actual} !== ${expected}`);
+}
+};
+
 const middle = function(array) {
   let middleArray = [];
   if (array.length % 2 === 0 && array.length > 2) {
-    middleArray.push(array.length/2);
-    middleArray.push(array.length/2 + 1);
+    middleArray.push(array[array.length/2 - 1]);
+    middleArray.push(array[array.length/2]);
   } else if (array.length % 2 !== 0 && array.length > 2) {
-    middleArray.push(Math.round(array.length/2));
-  } else if (array.length <= 2) {
-
-  }
+    middleArray.push(array[Math.floor(array.length/2)]);
+  } 
   console.log(middleArray);
 }
 
