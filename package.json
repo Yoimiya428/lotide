@@ -1,7 +1,7 @@
 {
-  "name": "mocha",
-  "version": "9.2.2",
-  "description": "dev dependencies",
+  "name": "@yotsuba428/lotide",
+  "version": "1.0.0",
+  "description": "let's try",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/Yoimiya428/lotide.git"
   },
-  "author": "",
+  "author": "Yoimiya428",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Yoimiya428/lotide/issues"
@@ -21,6 +21,7 @@
   "homepage": "https://github.com/Yoimiya428/lotide#readme",
   "dependencies": {
     "chai": "^5.2.0",
-    "mocha": "^11.1.0"
+    "lotide": "^1.0.1",
+    "mocha": "github:Yoimiya428/lotide"
   }
 }
