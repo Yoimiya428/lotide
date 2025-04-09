@@ -8,16 +8,17 @@ const eqArrays = require('./eqArrays');
 const countLetters = require('./countLetters');
 const countOnly = require('./countOnly');
 const letterPositions = require('./letterPositions');
+const without = require('./without');
 
 module.exports = {
-  head:   head,
-  tail:   tail,
-  middle: middle,
-  assertArraysEqual: assertArraysEqual,
-  assertEqual: assertEqual,
-  eqArrays: eqArrays,
-  without: without,
-  countLetters: countLetters,
-  countOnly: countOnly,
+  head,
+  tail,
+  middle,
+  assertArraysEqual,
+  assertEqual,
+  eqArrays,
+  without,
+  countLetters,
+  countOnly,
 
 };
