@@ -15,6 +15,6 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
-assertArraysEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
+//assertArraysEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
 
 module.exports = assertArraysEqual;
